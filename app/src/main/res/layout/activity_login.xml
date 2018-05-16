@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context="com.gstmadeeasy.Activity.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Welcome To"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold"-->
+            <!--/>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logow"/>
+    </LinearLayout>
+
+           <ScrollView
+               android:id="@+id/login_scroll"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/linear_layout"
+               >
+
+           <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <android.support.design.widget.TextInputLayout
+                       android:id="@+id/login_TextInputLayout"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="login"
+            android:layout_marginTop="20dp"
+            />
+                   </android.support.design.widget.TextInputLayout>
+               </LinearLayout>
+
+               <android.support.design.widget.TextInputLayout
+                   android:id="@+id/password_TextInputLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="password"
+                            android:inputType="textPassword"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@+id/login" />
+               </android.support.design.widget.TextInputLayout>
+       <Button
+           android:id="@+id/btn_login"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Login"
+           android:layout_marginTop="20dp"
+           android:background="#3993ed"
+           android:textColor="#f7f9fa"
+           android:layout_below="@+id/password"/>
+    </LinearLayout>
+
+           </ScrollView>
+    <LinearLayout
+        android:id="@+id/linear_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_scroll"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="#56a4f2"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear_layout2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By"
+            android:textColor="#838384"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virtuzo Consultancy Services Pvt.Ltd"
+            android:textColor="#56a4f2"
+            android:paddingLeft="20dp"
+            android:onClick="true"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

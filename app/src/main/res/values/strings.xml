@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GSTMadeEasy CRM</string>
+    <string name="spinner">AndroidSpinnerExample</string>
+    <string-array name="type">
+        <item>Address</item>
+        <item>Sales_Person</item>
+        <item>Commercial_Category</item>
+    </string-array>
+</resources>
